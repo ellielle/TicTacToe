@@ -1,3 +1,3 @@
-TicTacToe game made in Ruby
+##TicTacToe in Ruby
 
-from https://www.theodinproject.com/courses/ruby-programming/lessons/oop
+from [The Odin Project](https://www.theodinproject.com/courses/ruby-programming/lessons/oop)

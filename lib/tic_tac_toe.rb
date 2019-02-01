@@ -89,7 +89,7 @@ class TicTacToe
     @stalemate = true
   end
 
-  def print_game_board 
+  def print_game_board
     count = 0
     @squares.each_value do |v|
       puts "\n" if count % 3 == 0
@@ -107,20 +107,4 @@ class TicTacToe
     print "\nInvalid move."
   end
 
-end
-
-game = TicTacToe.new
-
-loop do
-break if (game.tictactoe == true || game.stalemate == true)
-
-puts "\n#{game.turn == "1" ? "Player 1" : "Player 2"}\'s turn, enter a space to take: "
-move = gets.chomp
-game.take_turn(move)
-end
-
-puts game.turn == "1" ? "\nPlayer 1 wins!" : "\nPlayer 2 wins!" if game.tictactoe == true
-if (game.tictactoe == false)
-  puts "No one wins! Press ENTER to exit." 
-  gets
 end
